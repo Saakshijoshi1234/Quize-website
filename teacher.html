@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>LOGIN FORM</title>
+    <style>
+        
+    </style>
+    <script>
+        function Validate() {
+            var fn = document.getElementById("fname").value;
+            if (fn == "") {
+                alert("Please Enter The First Name!!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body style="background-color:darkgoldenrod">
+    <img src="D:\project\new_teacher.jpeg" height="300"width="500">
+    <form action="FORMS.html" onsubmit="return Validate()">
+        <table style="background-color:chocolate;width:400px;height:500px" align="center">
+            <tr>
+                <th colspan="2">Quize form for teacher</th>
+            </tr>
+            <tr>
+                <td width="60px">FirstName:</td>
+                <td width="60px"><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>LastName:</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="password" /> </td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+                <td>
+                    <select>
+                        <option value="">Select</option>
+                        <option value="">TEACHER</option>
+                        <option value="">STUDENT</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="submit" value="Login"></td>
+            </tr>
+
+        </table>
+    </form>
+    </body>
+</html>

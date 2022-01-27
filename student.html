@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>LOGIN FORM</title>
+    <script>
+        function Validate() {
+            var fn = document.getElementById("fname").value;
+            if (fn == "") {
+                alert("Please Enter The First Name!!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body style="background-color:deepskyblue">
+    <img src="D:\project\istockphoto-1171062918-612x612.jpg"height="300"width="500" />
+    <form action="sakshi.html" onsubmit="return Validate()" align="center">
+        <table style="background-color:indianred;width:400px;height:500px" align="center">>
+            <tr>
+                <th colspan="2">Quize form for student</th>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Password : </td>
+                <td><input type="password" /> </td>
+            </tr>
+            <tr>
+                <td>Category:</td>
+                <td>
+                    <select>
+                        <option value="">Select</option>
+                        <option value="">TEACHER</option>
+                        <option value="">STUDENT</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="submit" value="Login"></td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
+
